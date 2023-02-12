@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import { Singleton } from '../dist/src/lit-singleton.js';
+    
+    class WebComponent extends Singleton{
+      static generator = () => document.createElement('web-component');
+
+      static properties = {
+        foo: { type: String }
+      };
+
+      render() {
+        return html`
+          <h1>
+            ${this.foo}
+          </h1>
+        `;
+      }
+    }
+    customElements.define('web-component', WebComponent);
+    
+    
+    render(
+      html`
+        <button @click=${()=>{WebComponent.getElement().foo = "Clicked!"}}>
+          some light-dom
+        </button>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

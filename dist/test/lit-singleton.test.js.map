@@ -1,0 +1,1 @@
+{"version":3,"file":"lit-singleton.test.js","sourceRoot":"","sources":["../../test/lit-singleton.test.ts"],"names":[],"mappings":"AAAA,OAAO,yBAAyB,CAAC","sourcesContent":["import '../src/lit-singleton.js';\n\n"]}

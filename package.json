@@ -5,12 +5,8 @@
   "author": "Christian Duarte",
   "version": "0.1.0",
   "type": "module",
-  "main": "dist/src/index.js",
-  "module": "dist/src/index.js",
-  "exports": {
-    "./lit-singleton.js": "./dist/src/lit-singleton.js",
-    "./index.js": "./dist/src/index.js"
-  },
+  "main": "./dist/src/lit-singleton.js",
+  "module": "./dist/src/lit-singleton.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ChristianDuarteL/lit-singleton.git"

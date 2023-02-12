@@ -3,10 +3,13 @@
   "description": "A library to make singleton-like elements in lit",
   "license": "MIT",
   "author": "Christian Duarte",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "type": "module",
   "main": "./dist/src/lit-singleton.js",
   "module": "./dist/src/lit-singleton.js",
+  "exports": {
+    "./lit-singleton.js": "./dist/src/lit-singleton.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ChristianDuarteL/lit-singleton.git"

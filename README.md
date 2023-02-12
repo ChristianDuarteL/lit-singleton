@@ -1,4 +1,4 @@
-# \Lit Singleton
+# Lit Singleton
 
 A library to make singleton-like elements in lit
 
